@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -16,7 +16,7 @@ export const Footer = () => {
           width={200}
           height={40}
         />
-        <a>Voltar ao topo</a>
+        <Link color="primary.100">Voltar ao topo</Link>
       </Flex>
       <Flex
         justify="space-between"

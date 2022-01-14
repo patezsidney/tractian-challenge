@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button, Heading, Text } from "@chakra-ui/react";
 import { Header } from "../src/components/header";
 import { Main } from "../src/components/main";
+import { Footer } from "../src/components/footer";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 };

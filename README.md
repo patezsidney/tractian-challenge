@@ -13,4 +13,4 @@ Este é um projeto de uma landing page responsiva simples desenvolvido para o ch
 
 ### Observações:
 
-Infelizmente ainda não tenho confiança em minhas habilidades de UI/UX para desenvolver uma landing page proficional, então me foquei nas ferramentas e no código e tentei mostrar que com um mockup consigo desenvolver, por isso utilizei a própria página da TRACTIAN como modelo.
+Infelizmente ainda não tenho confiança em minhas habilidades de UI/UX para desenvolver uma landing page profissional, então me foquei nas ferramentas e no código e tentei mostrar que com um mockup consigo desenvolver, por isso utilizei a própria página da TRACTIAN como modelo.

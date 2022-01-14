@@ -19,8 +19,8 @@ export const FooterForm = () => {
       color="white"
       bgGradient="linear(to-r, primary.500, primary.200)"
       maxW="600px"
-      margin="3rem auto"
-      padding="1rem"
+      margin={{ md: "3rem auto" }}
+      padding={{ md: "1rem" }}
       borderRadius={10}
     >
       <VStack h="100%" spacing={4}>
@@ -34,8 +34,16 @@ export const FooterForm = () => {
           <Input id="cargo" placeholder="Insira seu cargo" bgColor="white" />
           <FormErrorMessage>*Insira corretamente</FormErrorMessage>
         </FormControl>
-        <Flex justifyContent="space-between" w="100%">
-          <FormControl flex={1} marginRight={5}>
+        <Flex
+          justifyContent="space-between"
+          w="100%"
+          direction={{ base: "column", md: "row" }}
+        >
+          <FormControl
+            flex={1}
+            marginRight={5}
+            marginBottom={{ base: "1rem", md: "unset" }}
+          >
             <FormLabel htmlFor="email">E-mail profissional</FormLabel>
             <Input
               id="email"
@@ -45,14 +53,14 @@ export const FooterForm = () => {
             />
             <FormErrorMessage>*Insira seu email coorporativo</FormErrorMessage>
           </FormControl>
-          <FormControl w="fit-content">
+          <FormControl w={{ base: "100%", md: "fit-content" }}>
             <FormLabel htmlFor="phone">Telefone</FormLabel>
             <Input
               id="phone"
               placeholder="(XX) XXXXX-XXXX"
               type="tel"
               bgColor="white"
-              w="fit-content"
+              w={{ base: "100%", md: "fit-content" }}
             />
             <FormErrorMessage>*Insira corretamente</FormErrorMessage>
           </FormControl>

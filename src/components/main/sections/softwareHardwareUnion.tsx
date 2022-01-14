@@ -12,6 +12,7 @@ export const SoftwareHardwareUnion = () => {
       alignItems="center"
       bgGradient="linear(to-r, primary.500, primary.200)"
       color="white"
+      textAlign="center"
     >
       <Text as="h2" fontWeight={600} fontSize="3xl" paddingY={5}>
         A união perfeita de software e hardware em um só lugar
@@ -25,8 +26,9 @@ export const SoftwareHardwareUnion = () => {
         justify="space-around"
         textAlign="center"
         paddingTop="60px"
+        direction={{ base: "column", md: "row" }}
       >
-        <Box w="320px">
+        <Box w="320px" marginBottom={{ base: "2rem", md: "none" }}>
           <Flex
             bgColor="white"
             padding=".5rem 2rem"
@@ -51,7 +53,7 @@ export const SoftwareHardwareUnion = () => {
             Reduza em até <strong>60%</strong> o custo de manutenção
           </Text>
         </Box>
-        <Box w="320px">
+        <Box w="320px" marginBottom={{ base: "2rem", md: "none" }}>
           <Flex
             bgColor="white"
             padding=".5rem 2rem"
@@ -102,7 +104,12 @@ export const SoftwareHardwareUnion = () => {
           </Text>
         </Box>
       </Flex>
-      <Box position="relative" w="100%" h="100vw" maxH="600px">
+      <Box
+        position="relative"
+        w="100%"
+        h={{ base: "300px", md: "100vw" }}
+        maxH="600px"
+      >
         <Image
           src="https://imgix.tractian.com/lp-software/uniao-software-hardware-manutencao.png?auto=format&fit=max&w=3840"
           alt="Alert example"

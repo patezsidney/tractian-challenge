@@ -21,8 +21,16 @@ export const HeaderForm = () => {
           <Input id="name" placeholder="Insira seu nome" bgColor="white" />
           <FormErrorMessage>*Campo obrigatório</FormErrorMessage>
         </FormControl>
-        <Flex justifyContent="space-between" w="100%">
-          <FormControl flex={1} marginRight={5}>
+        <Flex
+          justifyContent="space-between"
+          w="100%"
+          direction={{ base: "column", xl: "row" }}
+        >
+          <FormControl
+            flex={1}
+            marginRight={5}
+            marginBottom={{ base: "1rem", xl: "unset" }}
+          >
             <FormLabel htmlFor="email">E-mail profissional</FormLabel>
             <Input
               id="email"
@@ -32,14 +40,14 @@ export const HeaderForm = () => {
             />
             <FormErrorMessage>*Insira seu email coorporativo</FormErrorMessage>
           </FormControl>
-          <FormControl w="fit-content">
+          <FormControl w={{ base: "100%", xl: "fit-content" }}>
             <FormLabel htmlFor="phone">Telefone</FormLabel>
             <Input
               id="phone"
               placeholder="(XX) XXXXX-XXXX"
               type="tel"
               bgColor="white"
-              w="fit-content"
+              w={{ base: "100%", xl: "fit-content" }}
             />
             <FormErrorMessage>*Insira corretamente</FormErrorMessage>
           </FormControl>
@@ -52,7 +60,10 @@ export const HeaderForm = () => {
         <FormControl as="fieldset">
           <FormLabel as="legend">Quantidade de pontos monitorados</FormLabel>
           <RadioGroup>
-            <HStack justify="space-between">
+            <HStack
+              justify="space-between"
+              wrap={{ base: "wrap", sm: "nowrap" }}
+            >
               <Radio value="10 a 20">10 a 20</Radio>
               <Radio value="21 a 30">21 a 30</Radio>
               <Radio value="31 a 50">31 a 50</Radio>

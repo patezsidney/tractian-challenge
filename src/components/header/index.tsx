@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { HeaderForm } from "../headerForm";
 
 export const Header = () => {
@@ -11,14 +11,31 @@ export const Header = () => {
       w="100vw"
       paddingTop={8}
     >
-      <Flex w="100%" h="100%" justifyContent="center" alignItems="center">
-        <Box w="35%">
-          <Image
-            src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
-            alt="Logo Tractian"
-            width={200}
-            height={40}
-          />
+      <Box display={{ md: "none" }}>
+        <Image
+          src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
+          alt="Logo Tractian"
+          width={200}
+          height={40}
+        />
+      </Box>
+      <Flex
+        w="100%"
+        h="100%"
+        justifyContent="center"
+        alignItems="center"
+        direction={{ base: "column-reverse", md: "row" }}
+        padding={{ base: "1rem", sm: "unset" }}
+      >
+        <Box w={{ base: "100%", md: "35%" }}>
+          <Box display={{ base: "none", md: "inherit" }}>
+            <Image
+              src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
+              alt="Logo Tractian"
+              width={200}
+              height={40}
+            />
+          </Box>
           <Text
             as="h1"
             casing="uppercase"
@@ -36,7 +53,11 @@ export const Header = () => {
           </Text>
           <HeaderForm />
         </Box>
-        <Box w="50%" h="80vh" position="relative">
+        <Box
+          w={{ base: "100%", sm: "50%" }}
+          h={{ base: "300px", sm: "80vh" }}
+          position="relative"
+        >
           <Image
             src="https://imgix.tractian.com/lp-software/sensor-plataforma-celular-tablet.png?auto=format&fit=max&w=1080"
             alt="Demo gestão de ativos"
@@ -45,7 +66,11 @@ export const Header = () => {
           />
         </Box>
       </Flex>
-      <Flex w="100%" h={180} position="relative">
+      <Flex
+        w="100%"
+        h={{ base: 10, sm: 40, md: 80, lg: 180 }}
+        position="relative"
+      >
         <Image
           src="https://imgix.tractian.com/images/ondas.svg"
           alt="Logo Tractian"

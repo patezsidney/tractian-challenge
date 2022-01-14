@@ -9,8 +9,12 @@ export const SmartIndustries = () => {
       </Text>
       <Text as="p">Trazemos paz para a manutenção.</Text>
       <Text as="p">Controle, autonomia e confiabilidade para sua máquina.</Text>
-      <Flex>
-        <Box position="relative" w="60%" h="80vh">
+      <Flex direction={{ base: "column", md: "row" }}>
+        <Box
+          position="relative"
+          w={{ base: "100%", md: "60%" }}
+          h={{ base: "300px", md: "80vh" }}
+        >
           <Image
             src="https://imgix.tractian.com/lp-software/insights-tela-desalinhamento.png?auto=format&fit=max&w=3840"
             alt="Dashboard example"

@@ -6,13 +6,19 @@ export const ContactForm = () => {
     <Flex
       direction="column"
       as="section"
-      padding={10}
+      padding={{ base: "2rem 1rem", md: 10 }}
       justify="center"
       alignItems="center"
       bgGradient="linear(to-r, primary.500, primary.200)"
       color="white"
     >
-      <Text as="h2" fontWeight={600} fontSize="3xl" paddingY={5}>
+      <Text
+        as="h2"
+        fontWeight={600}
+        fontSize={{ base: "2xl", md: "3xl" }}
+        paddingY={5}
+        textAlign="center"
+      >
         Pronto para deixar de lado as planilhas e ter dados que funcionam para
         você?
       </Text>

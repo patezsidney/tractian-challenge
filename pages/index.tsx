@@ -8,7 +8,7 @@ import { Footer } from "../src/components/footer";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>TRACTIAN</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 };
 

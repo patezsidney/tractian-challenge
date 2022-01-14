@@ -9,13 +9,19 @@ export const Footer = () => {
       color="white"
       padding={10}
     >
-      <Flex justify="space-between" align="center" padding="2rem">
-        <Image
-          src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
-          alt="Logo Tractian"
-          width={200}
-          height={40}
-        />
+      <Flex
+        justify={{ base: "center", md: "space-between" }}
+        align="center"
+        padding="2rem"
+      >
+        <Box display={{ base: "none", md: "inherit" }}>
+          <Image
+            src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
+            alt="Logo Tractian"
+            width={200}
+            height={40}
+          />
+        </Box>
         <Link color="primary.100">Voltar ao topo</Link>
       </Flex>
       <Flex
@@ -24,6 +30,7 @@ export const Footer = () => {
         padding="2rem"
         borderTop="1px"
         borderColor="rgb(96 165 250)"
+        direction={{ base: "column", md: "row" }}
       >
         <Box
           textAlign="center"
@@ -31,6 +38,14 @@ export const Footer = () => {
           fontSize="xs"
           _hover={{ color: "white" }}
         >
+          <Box display={{ md: "none" }}>
+            <Image
+              src="https://imgix.tractian.com/images/Logo-Tractian.svg?auto=format&fit=max&w=640"
+              alt="Logo Tractian"
+              width={200}
+              height={40}
+            />
+          </Box>
           <Text fontWeight="bold">© Tractian Tecnologia Ltda</Text>
           <Text>CNPJ: 35.755.699/0001-84</Text>
         </Box>
